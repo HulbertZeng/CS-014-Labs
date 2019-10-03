@@ -4,6 +4,7 @@ using namespace std;
 #include "Playlist.h"
 
 Playlist::Playlist() {
+  
   uniqueID = "none";
   songName = "none";
   artistName = "none";
@@ -11,36 +12,35 @@ Playlist::Playlist() {
   nextNodePtr = 0;
 }
 
-void Playlist::InsertAfter() {
+void PlaylistNode::InsertAfter() {
   cout << "FUNCTION InsertAfter() NOT COMPLETE" << endl;
 }
 
-void Playlist::SetNext() {
+void PlaylistNode::SetNext() {
   cout << "FUNCTION SetNext() NOT COMPLETE" << endl;
 }
 
-string Playlist::GetID() {
+string PlaylistNode::GetID() const{
   return uniqueID;
 }
 
-string Playlist::GetSongName() {
+string PlaylistNode::GetSongName() const{
   return songName;
 }
 
-string Playlist::GetArtistName() {
+string PlaylistNode::GetArtistName() const{
   return artistName;
 }
 
-int Playlist::GetSongLength() {
+int PlaylistNode::GetSongLength() const{
   return songLength;
 }
 
-int Playlist::GetNext() {
-  cout << "FUNCTION GetNext() NOT COMPETE" << endl;
-  return 1;
+PlaylistNode* PlaylistNode::GetNext() const{
+  return this->nextNodePtr;
 }
 
-void Playlist::PrintPlaylistNode() {
+void PlaylistNode::PrintPlaylistNode() {
   cout << "FUNCTION PrintPlaylistNode NOT COMPLETE" << endl;
 }
 
