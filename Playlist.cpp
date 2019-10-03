@@ -3,20 +3,28 @@ using namespace std;
 
 #include "Playlist.h"
 
-Playlist::Playlist() {
-  
+PlaylistNode::Playlist() {
   uniqueID = "none";
   songName = "none";
   artistName = "none";
   songLength = 0;
-  nextNodePtr = 0;
+  nextNodePtr* = 0;
 }
 
-void PlaylistNode::InsertAfter() {
+PlaylistNode::Playlist(string id, string song, string artist, int length, int next) {
+  uniqueID = id;
+  songName = song;
+  artistName = artist;
+  songLength = length;
+  nextNodePtr* = next;
+}
+
+void PlaylistNode::InsertAfter(PlaylistNode* addressSetAfter) {
   cout << "FUNCTION InsertAfter() NOT COMPLETE" << endl;
 }
 
-void PlaylistNode::SetNext() {
+void PlaylistNode::SetNext(PlaylistNode* toBeNext) {
+  
   cout << "FUNCTION SetNext() NOT COMPLETE" << endl;
 }
 
@@ -41,14 +49,6 @@ PlaylistNode* PlaylistNode::GetNext() const{
 }
 
 void PlaylistNode::PrintPlaylistNode() {
-  cout << "FUNCTION PrintPlaylistNode NOT COMPLETE" << endl;
+  cout << "FUNCTION PrintPlaylistNode() NOT COMPLETE" << endl;
 }
-
-
-
-
-
-
-
-
 
