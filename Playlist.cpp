@@ -8,7 +8,7 @@ PlaylistNode::Playlist() {
   songName = "none";
   artistName = "none";
   songLength = 0;
-  nextNodePtr* = 0;
+  *nextNodePtr = 0;
 }
 
 PlaylistNode::Playlist(string id, string song, string artist, int length, int next) {
@@ -16,10 +16,11 @@ PlaylistNode::Playlist(string id, string song, string artist, int length, int ne
   songName = song;
   artistName = artist;
   songLength = length;
-  nextNodePtr* = next;
+  *nextNodePtr = next;
 }
 
 void PlaylistNode::InsertAfter(PlaylistNode* addressSetAfter) {
+  addressSetAfter.nextNodePtr ;
   cout << "FUNCTION InsertAfter() NOT COMPLETE" << endl;
 }
 
