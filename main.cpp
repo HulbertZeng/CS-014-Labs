@@ -5,8 +5,9 @@ using namespace std;
 
 void printMenu(string playlistTitle) {
   char userInput;
+  bool isValidInput = true;
   
-  while(userInput != 'q') {
+  while(isValidInput) {
     cout << "JAMZ PLAYLIST MENU" << endl;
     cout << "a - Add song" << endl;
     cout << "d - Remove song" << endl;
@@ -16,6 +17,26 @@ void printMenu(string playlistTitle) {
     cout << "o - Output full playlist" << endl;
     cout << "q - Quit" << endl << endl;
     cout << "Choose an option:" << endl;
+    
+    cin >> userInput;
+    
+    if(userInput == 'a') {
+    
+    } else if(userInput == 'b') {
+    
+    } else if(userInput == 'c') {
+    
+    } else if(userInput == 's') {
+    
+    } else if(userInput == 't') {
+    
+    } else if(userInput == 'o') {
+    
+    } else if(userInput == 'q') {
+      
+    } else {
+      isValidInput = false;
+    }
   }
 }
 
