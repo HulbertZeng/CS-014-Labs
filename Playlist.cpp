@@ -8,25 +8,24 @@ PlaylistNode::Playlist() {
   songName = "none";
   artistName = "none";
   songLength = 0;
-  *nextNodePtr = 0;
+  nextNodePtr = 0;
 }
 
-PlaylistNode::Playlist(string id, string song, string artist, int length, int next) {
+PlaylistNode::Playlist(string id, string song, string artist, int length) {
   uniqueID = id;
   songName = song;
   artistName = artist;
   songLength = length;
-  *nextNodePtr = next;
+  this->nextNodePtr = 0;
 }
 
 void PlaylistNode::InsertAfter(PlaylistNode* addressSetAfter) {
-  addressSetAfter.nextNodePtr ;
+  this->nextNodePtr = addressSetAfter;
   cout << "FUNCTION InsertAfter() NOT COMPLETE" << endl;
 }
 
 void PlaylistNode::SetNext(PlaylistNode* toBeNext) {
-  
-  cout << "FUNCTION SetNext() NOT COMPLETE" << endl;
+  this->nextNodePtr = toBeNext;
 }
 
 string PlaylistNode::GetID() const{
