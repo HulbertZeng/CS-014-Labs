@@ -1,8 +1,9 @@
-
+#ifndef PLAYLIST_H
+#define PLAYLIST_H
 
 class Playlist {
-  Default constructor
-  Parameterized constructor
+  Playlist();
+  Playlist(int);
   public:
   InsertAfter();
   SetNext(); //Mutator
