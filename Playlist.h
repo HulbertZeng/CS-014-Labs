@@ -4,9 +4,9 @@
 class PlaylistNode {
   public:
   Playlist();
-  Playlist(int);
-  void InsertAfter();
-  void SetNext(); //Mutator
+  Playlist(string, string, string, int, int);
+  void InsertAfter(PlaylistNode*);
+  void SetNext(PlaylistNode*); //Mutator
   string GetID() const; //Accessor
   string GetSongName() const; //Accessor
   string GetArtistName() const; //Accessor
