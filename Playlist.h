@@ -20,3 +20,5 @@ class Playlist {
   int songLength; //Initialized to 0 in default constructor
   PlaylistNode* nextNodePtr; //Initialized to 0 in default constructor
 };
+
+#endif
