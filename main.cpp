@@ -20,6 +20,9 @@ void printMenu(string playlistTitle) {
     
     cin >> userInput;
     
+    headObj = new PlaylistNode();
+    tailObj = new PlaylistNode();
+    
     if(userInput == 'a') {
     
     } else if(userInput == 'b') {
