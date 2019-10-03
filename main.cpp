@@ -21,7 +21,7 @@ int main() {
   
   return 0;
 }
-
+e
 void printMenu(string playlistTitle) {
   char userInput;
   
@@ -38,8 +38,8 @@ void printMenu(string playlistTitle) {
     
     cin >> userInput;
     
-    PlaylistNode* headObj = nullptr;
-    PlaylistNode* tailObj = nullptr;
+    PlaylistNode* headNode = nullptr;
+    PlaylistNode* tailNode = nullptr;
     
     if(userInput == 'a') {
       addSong();
@@ -57,3 +57,33 @@ void printMenu(string playlistTitle) {
   }
   return;
 }
+
+void addSong() {
+  string id;
+  string song;
+  string artist;
+  int length;
+  
+  cout << "ADD SONG" << endl;
+  cout << "Enter song's unique ID:" << endl;
+  cin >> id;
+  cout << "Enter song's name:" << endl;
+  cin >> song;
+  cout << "Enter artist's name:" << endl;
+  cin >> artist;
+  cout << "Enter song's length (in seconds):" << endl;
+  cin >> length;
+  
+  PlaylistNode newNode(id, song, artist, length);
+  
+}
+
+void removeSong() {}
+
+void changePosition() {}
+
+void outputArtist() {}
+
+void outputTotalTime() {}
+
+void outputFull() {}
